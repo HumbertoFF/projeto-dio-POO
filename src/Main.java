@@ -1,3 +1,4 @@
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
 
@@ -25,5 +26,11 @@ public class Main {
     novaMentoria.setData(LocalDate.now());
 
     System.out.println(novaMentoria);
+
+    Conteudo novoCurso = new Curso();
+    novoCurso.setTitulo("curso sobre polimorfismo em Java");
+    novoCurso.setDescricao("informações sobre o curso");
+
+    System.out.println(novoCurso);
     }
 }
